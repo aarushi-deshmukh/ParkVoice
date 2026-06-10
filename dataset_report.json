@@ -1,0 +1,14 @@
+{
+  "subjects": 0,
+  "recordings": 0,
+  "class_balance": {},
+  "audio_availability": false,
+  "updrs_availability": false,
+  "longitudinal_availability": false,
+  "disabled_features": [
+    "severity_estimation",
+    "longitudinal_tracking",
+    "efficientnet_training"
+  ],
+  "notes": "Populate by running notebooks/00_dataset_validation.ipynb against the configured dataset path."
+}

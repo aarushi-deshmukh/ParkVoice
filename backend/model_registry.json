@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0-screening",
+  "dataset": "pending_dataset_validation",
+  "training_date": null,
+  "disclaimer": "This system is intended for research and screening support purposes only and is not a diagnostic medical device.",
+  "models": [
+    {
+      "name": "Random Forest",
+      "artifact": "rf_model.pkl",
+      "onnx_artifact": "rf_quantized.onnx",
+      "calibration": "CalibratedClassifierCV(method=\"sigmoid\", cv=5)",
+      "metrics": {},
+      "onnx_status": "pending"
+    },
+    {
+      "name": "XGBoost",
+      "artifact": "xgb_model.pkl",
+      "onnx_artifact": "xgb_quantized.onnx",
+      "calibration": "CalibratedClassifierCV(method=\"sigmoid\", cv=5)",
+      "metrics": {},
+      "onnx_status": "pending"
+    },
+    {
+      "name": "LightGBM",
+      "artifact": "lgbm_model.pkl",
+      "onnx_artifact": "lgbm_quantized.onnx",
+      "calibration": "CalibratedClassifierCV(method=\"sigmoid\", cv=5)",
+      "metrics": {},
+      "onnx_status": "pending"
+    },
+    {
+      "name": "EfficientNet-B0 Spectrogram Classifier",
+      "artifact": "cnn_model.pt",
+      "onnx_artifact": "efficientnet_b0_quantized.onnx",
+      "calibration": "temperature/sigmoid calibration required before clinical research use",
+      "metrics": {},
+      "onnx_status": "pending"
+    }
+  ]
+}
